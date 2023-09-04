@@ -11,7 +11,7 @@ export const Landing =()=>{
             <Services/>
             <About/>
             <Reviews/>
-              <Team/>
+            <Team/>
             <Contact/>
             <Footer/>
             

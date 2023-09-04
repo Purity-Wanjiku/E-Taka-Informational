@@ -72,7 +72,7 @@ export const OvalShape = ({ imageUrl , name, role}) => {
 
 
 
-export const VCutout = ({ backgroundColor, triangleColor,imageUrl,h1, text ,fontSize}) => {
+export const VCutout = ({  triangleColor,imageUrl,h1, text ,fontSize}) => {
   const vCutoutStyle = {
     width: '300px',
     height: '300px',

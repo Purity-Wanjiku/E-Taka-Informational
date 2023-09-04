@@ -3,22 +3,16 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-/* .section-container {
-    margin: 20px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+
 .centered-section {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding: 20px; /* Adjust padding to control margin around sections */
+    padding: 20px; 
     box-sizing: border-box;
 }
 
-/* Additional styling for each container */
 .service-container,
 .team-container,
 .about-container,
@@ -28,10 +22,11 @@ body{
     border: 1px solid #ddd;
     font-family: 'Poppins', sans-serif;
     padding: 20px;
-    margin: 20px; /* Adjust margin to control spacing between sections */
+    margin: 20px; 
     display: flex;
-    flex-wrap: wrap; /* Display inner divs vertically */
-    align-items: center; /* Center inner divs horizontally within the container */
+    flex-wrap: wrap; 
+    align-items: center; 
+    position: relative;
 }
 
 .section-container{
@@ -116,34 +111,8 @@ body{
     padding:  0 20%;
    
 }  
-/* .arrow{
-
-}
-          
-.value{
-
-}
-            
-.arrow1{
-
-}
-.industry{
-
-}
-.arrow2{
-
-}
-            
-.shop{
-
-}
-            
-.arrow3{
-
-} */
 
 
-/* release */
 .service-container {
     background-color: #EDF5F0;
     text-align: center;
@@ -309,3 +278,55 @@ small {
     text-align: center;
 }
 
+
+
+
+
+/* Media query for screens up to 768 pixels wide */
+@media (max-width: 768px) {
+    .centered-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 20px; 
+        box-sizing: border-box;
+    }
+    
+    .home{
+        height: 360px;
+        width: 360px;
+    }
+
+    .team-container{
+    
+    }
+    .footer {
+        padding: 20px 0; 
+    }
+
+    .footer-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .footer-section {
+        flex: 1;
+        padding: 10px; 
+        text-align: center; 
+    }
+
+    .social-icons {
+        flex-direction: row; 
+        justify-content: center; 
+        margin-top: 10px; 
+    }
+
+    .social-icons li {
+        padding: 5px; 
+
+    small {
+        margin-top: 5px; 
+    }
+}
+}
