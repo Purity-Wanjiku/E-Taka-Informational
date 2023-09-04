@@ -26,7 +26,7 @@ body{
     display: flex;
     flex-wrap: wrap; 
     align-items: center; 
-    position: relative;
+    /* position: relative; */
 }
 
 .section-container{
@@ -67,7 +67,7 @@ body{
   }
   
   .logo {
-    font-size: 30px;
+    font-size: 20px;
     text-decoration: none;
     font-weight: 600;
   }
@@ -184,6 +184,27 @@ body{
 
  /* Media query for smaller screens */
  @media (max-width: 768px) {
+    .team-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250vh;
+        padding: 20px; 
+        box-sizing: border-box;
+
+        
+       
+    }
+    .customer-reviews{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10%;
+        margin-top: 20px;
+        background-color: #FFE0BB;
+        height: 220vh;
+    }
     .nav-bar-container {
       flex-direction: column;
       align-items: center;

@@ -58,11 +58,33 @@ export const OvalShape = ({ imageUrl , name, role}) => {
     
   }
 
+  const mediaQueryStyle = {
+    '@media (max-width: 768px)': {
+      divStyle1: {
+        width: '80px',
+        height: '80px',
+        marginTop: '5%',
+      },
+      divStyle2: {
+        width: '80px',
+        height: '80px',
+        marginTop: '-26%',
+      },
+      divStyle3: {
+        width: '160px',
+        height: '160px',
+        marginTop: '-20%',
+      },
+      // Adjust other styles as needed
+    },
+  };
+
+
   return (
     <div>
-      <div style={divStyle1}></div>
-      <div style={divStyle2}></div>
-      <div style={divStyle3}>{imageUrl && <img src={imageUrl} alt="oval image" style={imgStyle} />}</div>
+     <div style={{ ...divStyle1, ...mediaQueryStyle.divStyle1 }}></div>
+      <div style={{ ...divStyle2, ...mediaQueryStyle.divStyle2 }}></div>
+      <div style={{ ...divStyle3, ...mediaQueryStyle.divStyle3 }}>{imageUrl && <img src={imageUrl} alt="oval image" style={imgStyle} />}</div>
       <h2 style={nameStyle}>{name}</h2>
       <p style={roleStyle}>{role}</p>
     </div>
