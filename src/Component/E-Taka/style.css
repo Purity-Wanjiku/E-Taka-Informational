@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* .section-container {
+    margin: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.centered-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px; /* Adjust padding to control margin around sections */
+    box-sizing: border-box;
+}
+
+/* Additional styling for each container */
+.service-container,
+.team-container,
+.about-container,
+.contact-container,
+.customer-reviews {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    margin: 20px; /* Adjust margin to control spacing between sections */
+    display: flex;
+    flex-wrap: wrap; /* Display inner divs vertically */
+    align-items: center; /* Center inner divs horizontally within the container */
+}
+
+.section-container{
+    margin-top: 5%;
+}
+
+
+.service-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+    padding:  0 10%;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color:  #FF9800;
+    
+} 
+
+.nav-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 50px;
+    color: #000;
+  }
+  
+  .logo {
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 20px;
+    font-family: 'League Spartan', sans-serif;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #36454F;
+    font-weight: 500;
+    font-size: 24px;
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  .nav-link.active {
+    color: #FF9800;
+  }
+  
+  .nav-link.active::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 4px;
+    background-color:  #003B2B;
+    position: absolute;
+    bottom: -5px;
+    left: 25px;
+  }
+
+.home-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    padding:  0 20%;
+   
+}  
+/* .arrow{
+
+}
+          
+.value{
+
+}
+            
+.arrow1{
+
+}
+.industry{
+
+}
+.arrow2{
+
+}
+            
+.shop{
+
+}
+            
+.arrow3{
+
+} */
+
+
+/* release */
+.service-container {
+    background-color: #EDF5F0;
+    text-align: center;
+    padding: 50px;
+    height: 50vh;
+}
+
+
+.service-content {
+    display: flex;
+}
+
+
+.mini-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    max-width: 600px;
+    color: #333;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+}
+.service-text{
+    text-align: center;
+    max-width: 600px;
+    font-size: 26px;
+}
+
+
+.phone-image {
+    /* width: 50vw; */
+    max-width: 800px;
+}
+
+
+.team-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    padding:  0 20%;
+   
+}
+
+.header h2{
+    font-family: 'League Spartan', sans-serif;
+}
+.header p{
+    font-size: 40px;
+}
+.values-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10%;
+}
+
+.customer-reviews{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10%;
+    margin-top: 20px;
+    background-color: #FFE0BB;
+    height: 30vh;
+}
+
+ /* Media query for smaller screens */
+ @media (max-width: 768px) {
+    .nav-bar-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .nav {
+      margin-top: 10px;
+      gap: 10px;
+    }
+  
+    .logo {
+      font-size: 24px;
+    }
+  
+    .sign-up-btn,
+    .login-btn {
+      width: auto;
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  } 
+
+
+  /*footer  */
+  .footer {
+    background-color: #003B2B;
+    padding: 30px 0;
+    color: #fff;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #003B2B;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    /* margin-left: 10px; */
+    font-size: 13px;
+    
+}
+
+.social-icons li{
+    border:  1px solid #ff6701 ;
+    background-color: #ff6701;
+    width: 25px;
+    text-align: center;
+    padding:  6px;
+    border-radius: 50%;
+}
+
+small {
+    font-size: 12px;
+    margin-top: 10px;
+    display: block;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+}
+
